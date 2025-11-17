@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Werewolf Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Werewolf Online (Simple)</h1>
+
+<input id="room" placeholder="Room ID">
+<input id="name" placeholder="Your Name">
+
+<button onclick="createRoom()">Create Room</button>
+<button onclick="joinRoom()">Join Room</button>
+
+<h2>Players in room:</h2>
+<ul id="players"></ul>
+
+<button onclick="startGame()">Start Game</button>
+
+<h2 id="role">Your Role: -</h2>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="client.js"></script>
+</body>
+</html>
